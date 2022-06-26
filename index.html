@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <script src="jScripts/JavaScript.js"></script>
+    <!--<link href="styles/myStyle.css" rel="stylesheet" />
+    <link href="styles/reset.css" rel="stylesheet" />-->
+    <!-- Scripts -->
+    <!--<script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>-->
+    <link href="styles/nweStyleSh.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+        <!-- הקוד מתחיל כאן -->
+        <div class="container">
+
+            <!-- מספור כל תמונה, והתמונה המרכזית שמוצגת ברוחב מוגדר -->
+            <!-- התמונה הראשונה שמוצגת -->
+            <div class="mySlides">
+                <div class="numbertext"> 1 / 6</div>
+                <img src="imagesForGalerry/angelo-pantazis-2-U0A2tNYhM-unsplash.jpg" style="width: 100%;" />
+            </div>
+           
+            <!-- 2 -->
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="imagesForGalerry/ddp-gCa9RylXBO0-unsplash.jpg" style="width: 100%;" />
+            </div>
+
+            <!-- 3 -->
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="imagesForGalerry/Image 22.png" style="width: 100%;" />
+            </div>
+
+            <!-- 4 -->
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="imagesForGalerry/pexels-bruno-thethe-1755785.jpg" style="width: 100%;"/>
+            </div>
+
+            <!-- 5 -->
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="imagesForGalerry/pexels-hermaion-137103.jpg" style="width: 100%;"/>
+            </div>
+
+            <!-- 6 -->
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="imagesForGalerry/pexels-mariana-kurnyk-1756061.jpg" style="width: 100%;"/>
+            </div>
+
+
+            <!-- כפתורי החיצים ימינה ושמאלה -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+            <!-- טקסט המתאר את התמונה -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+            <!-- התמונות שמופיעות מתחת לתמונה הראשית -->
+            <div class="row" style=" display: flex;">
+                    <div class="column" style=" display: flex;" >
+                        <img src="imagesForGalerry/angelo-pantazis-2-U0A2tNYhM-unsplash.jpg" class="demo cursor" style="width:100%" onload="currentSlide(1)" onclick="currentSlide(1)" alt="מגוון המאפים שלנו"/>
+                    </div>
+                    <div class="column" style=" display: flex;">
+                        <img src="imagesForGalerry/ddp-gCa9RylXBO0-unsplash.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(2)" alt="לחם המחמצת לפני הכניסה לתנור"/>
+                    </div>
+                    <div class="column" style=" display: flex;">
+                        <img src="imagesForGalerry/Image 22.png" class="demo cursor" style="width:100%" onclick="currentSlide(3)" alt="לחם המחמצת בשלב התפיחה" />
+                    </div>
+                    <div class="column" style=" display: flex;">
+                        <img src="imagesForGalerry/pexels-bruno-thethe-1755785.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(4)" alt="מחמצת אגוזים"/>
+                    </div>
+                    <div class="column" style=" display: flex;">
+                        <img src="imagesForGalerry/pexels-hermaion-137103.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(5)" alt="מחמצת שיפון"/>
+                    </div>
+                    <div class="column" style=" display: flex;">
+                        <img src="imagesForGalerry/pexels-mariana-kurnyk-1756061.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(6)" alt="מחמצת שומשום" />
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

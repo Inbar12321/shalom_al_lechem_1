@@ -1,0 +1,91 @@
+﻿body {
+    direction: unset;
+}
+
+/* הגדרת הרוחב והאורך של הגלריה */
+.container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    padding: 0px 400px;
+}
+
+/* תצוגת הסימלון של העכבר למצב של אובייקט לחיץ */
+.cursor {
+    cursor: pointer;
+}
+
+/* חיצים ימינה ושמאלה */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* מיקום החץ הימני להחלפה בין התמונות  */
+.next {
+    right: 400px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* רקע שחור עבור החיצים במצב מעבר עכבר */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* מספר התמונה */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* תיאור התמונה */
+.caption-container {
+    font-family: Calibri;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 4px 4px;
+    position: absolute;
+    opacity:0.7;
+    top: 0;
+    right: 400px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* שורת התמונות האופציונליות לגלריה */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* שקיפות עבור התמונות בשורת התמונות - במצב "לא בחור" */
+.demo {
+    opacity: 0.8;
+}
+
+.active,
+.demo:hover {
+        opacity: 1;
+    }
+
+
